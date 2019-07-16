@@ -4,9 +4,6 @@
   <languages>
     <use id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="NewLanguage" version="-1" />
     <use id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review" version="0" />
-    <use id="7d323e61-8358-4656-a071-a2bb68438615" name="com.mbeddr.core.codereview" version="0" />
-    <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="5" />
   </languages>
   <imports>
     <import index="1fav" ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(NewLanguage.structure)" />
