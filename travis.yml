@@ -1,0 +1,25 @@
+language: java
+jdk:
+- openjdk8
+before_install:
+- wget https://download-cf.jetbrains.com/mps/2019.1/MPS-2019.1.zip
+- wget https://github.com/mbeddr/mbeddr.core/releases/download/nightly-619/platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip 
+install:
+- unzip MPS-2019.1.zip
+- unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip 
+script:
+- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins clean generate assemble
+- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1
+before_deploy: mv build/artifacts/NodeReview/NodeReview.zip build/artifacts/NodeReview/NodeReview-MPS-2019.1.zip
+
+deploy:
+  provider: releases
+  name: NodeReview-Build-$TRAVIS_TAG
+  api_key:
+    secure: TMfUF+4hR7WIJdWR8SI7l+aEx6QwiZD/C4hEy6Ag0u/kC2gYePQSBInLlCnT6gqr3lh5zA8pDgouyisxVLD4FTeg/DmMK9z8DIfqAAsNGeZMBTUleQOrB5qMjUeRPHpLOSJHwWQm8qpDYRCAh7MCyqY+PmEbxMCWqiWvu/NtnJh89+mqTQ7jkazOZveIbPxDC1Cl8HK7p9yVLvI9b4oy0u5CPGh5pKfs6myV/HLB6hXB36TBD8kA2OGi8LkA+JDX8XG+ac2DwhwUe3D/JwwldjmRQ+SCsId+VdWO9JAUFLtk41lIaiRM0f7aVc7vbJqZ2Vsjz8hDBRv1AtGTC/OqMDpZiUmxwLS/8Gf9dFj6j93VBYOkYPfsM8hRNnApDK2jMHQuzS1jvk/B+0DVGY5m8OcbgmjezdMvWP5tSvfzXxkOnsaWhkX9Ftr3rMCxD2CtoQQcHkcJPcrN4WVc2yHVaL7oqPMUcAZRoia6F3nzJ1euXaNzvybZMw41vBGNPFW5mdXQfCSkm9nsK5Hlypf0gosAoX66jHpv2m3ao6b0fxoq69cz9xdSaQQqKxzUujb8Jsd/5F0+dXoaPqMMi8/UU1VtkaijNbbHP/s0yl3iOkyd0mHDOQgGQV1SBnVpDJH+5OHBdQAq/2cT3krjYMLMfZEt2pkEWLe2fqyVD0SoXGU=
+  file: 
+  - "/home/travis/build/diederikd/NodeReview/build/artifacts/NodeReview/NodeReview-MPS-2019.1.zip"
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: diederikd/NodeReviw
