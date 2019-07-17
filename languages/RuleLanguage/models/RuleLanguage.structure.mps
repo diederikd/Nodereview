@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(NewLanguage.structure)">
+<model ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(RuleLanguage.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
@@ -11,13 +11,13 @@
   </imports>
   <registry>
     <language id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review">
-      <concept id="643772908760767661" name="review.structure.Transition" flags="ng" index="2YmVyx">
+      <concept id="643772908760767661" name="review.structure.TransitionHistory" flags="ng" index="2YmVyx">
         <property id="643772908761319972" name="user" index="2YkySC" />
         <property id="643772908760767673" name="timestamp" index="2YmVyP" />
         <reference id="643772908760767662" name="oldState" index="2YmVyy" />
         <reference id="643772908760767664" name="newState" index="2YmVyW" />
       </concept>
-      <concept id="5972466929627018027" name="review.structure.TransitionType" flags="ng" index="ZNsgG">
+      <concept id="5972466929627018027" name="review.structure.Transition" flags="ng" index="ZNsgG">
         <child id="5972466929627018042" name="to" index="ZNsgX" />
         <child id="5972466929627018040" name="from" index="ZNsgZ" />
       </concept>

@@ -570,7 +570,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="zJ90MQ_zJY" role="3ddBve">
-        <ref role="ehGHo" to="txuu:5bytKtHbVcF" resolve="TransitionType" />
+        <ref role="ehGHo" to="txuu:5bytKtHbVcF" resolve="Transition" />
       </node>
     </node>
     <node concept="2SaL7w" id="zJ90MQ_QAd" role="2ZfVeh">

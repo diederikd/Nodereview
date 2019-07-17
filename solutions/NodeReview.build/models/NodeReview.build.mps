@@ -63,11 +63,16 @@
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -229,6 +234,10 @@
         <node concept="3Mxwew" id="4A8BxSqsg7L" role="3MwsjC">
           <property role="3MwjfP" value="NodeReview" />
         </node>
+      </node>
+      <node concept="2iUeEo" id="4$dyQA9zHJV" role="2iVFfd">
+        <property role="2iUeEt" value="dulfer" />
+        <property role="2iUeEu" value="www.dulfer.info" />
       </node>
     </node>
     <node concept="2G$12M" id="4A8BxSqsg7C" role="3989C9">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7841da3c-5c51-4410-9e4f-20f2709a6fd0(NewLanguage.behavior)">
+<model ref="r:7841da3c-5c51-4410-9e4f-20f2709a6fd0(RuleLanguage.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />

@@ -6,17 +6,17 @@
     <use id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review" version="0" />
   </languages>
   <imports>
-    <import index="1fav" ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(NewLanguage.structure)" />
+    <import index="1fav" ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(RuleLanguage.structure)" />
   </imports>
   <registry>
     <language id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review">
-      <concept id="643772908760767661" name="review.structure.Transition" flags="ng" index="2YmVyx">
+      <concept id="643772908760767661" name="review.structure.TransitionHistory" flags="ng" index="2YmVyx">
         <property id="643772908761319972" name="user" index="2YkySC" />
         <property id="643772908760767673" name="timestamp" index="2YmVyP" />
         <reference id="643772908760767662" name="oldState" index="2YmVyy" />
         <reference id="643772908760767664" name="newState" index="2YmVyW" />
       </concept>
-      <concept id="5972466929627018027" name="review.structure.TransitionType" flags="ng" index="ZNsgG">
+      <concept id="5972466929627018027" name="review.structure.Transition" flags="ng" index="ZNsgG">
         <child id="5972466929627018042" name="to" index="ZNsgX" />
         <child id="5972466929627018040" name="from" index="ZNsgZ" />
       </concept>
@@ -66,11 +66,11 @@
     </language>
   </registry>
   <node concept="ZXWWW" id="5bytKtH5Cxn">
-    <property role="TrG5h" value="testRuleGroup" />
+    <property role="TrG5h" value="Test RuleGroup" />
     <node concept="ZY3zO" id="5bytKtHc32F" role="ZY3zN">
       <property role="TrG5h" value="Rule1" />
       <node concept="3RMOIA" id="zJ90MQIKI0" role="lGtFl">
-        <property role="3RPX40" value="1563101076264" />
+        <property role="3RPX40" value="1563393793574" />
         <property role="3RPX45" value="diederikdulfer" />
         <ref role="2Ym_pB" node="5bytKtHckbC" resolve="1e review" />
         <node concept="2YmVyx" id="zJ90MQNK2f" role="2YmVyR">
@@ -118,6 +118,18 @@
         <node concept="2YmVyx" id="1RbizSLOfJ" role="2YmVyR">
           <property role="2YkySC" value="diederikdulfer" />
           <property role="2YmVyP" value="1563101076263" />
+          <ref role="2YmVyy" node="5bytKtHckbA" resolve="Initieel" />
+          <ref role="2YmVyW" node="5bytKtHckbC" resolve="1e review" />
+        </node>
+        <node concept="2YmVyx" id="4$dyQA9$cCd" role="2YmVyR">
+          <property role="2YkySC" value="diederikdulfer" />
+          <property role="2YmVyP" value="1563393782279" />
+          <ref role="2YmVyy" node="5bytKtHckbC" resolve="1e review" />
+          <ref role="2YmVyW" node="5bytKtHckbA" resolve="Initieel" />
+        </node>
+        <node concept="2YmVyx" id="4$dyQA9$cCn" role="2YmVyR">
+          <property role="2YkySC" value="diederikdulfer" />
+          <property role="2YmVyP" value="1563393793573" />
           <ref role="2YmVyy" node="5bytKtHckbA" resolve="Initieel" />
           <ref role="2YmVyW" node="5bytKtHckbC" resolve="1e review" />
         </node>
@@ -289,7 +301,7 @@
     </node>
   </node>
   <node concept="3Xb6eZ" id="5bytKtH5CxB">
-    <property role="TrG5h" value="review test configuration" />
+    <property role="TrG5h" value="review test configuratie" />
     <node concept="ZNsgG" id="5bytKtHckbO" role="ZNsip">
       <property role="TrG5h" value="Klaar met 1e Review" />
       <node concept="ZNsgR" id="5bytKtHckbQ" role="ZNsgZ">

@@ -81,6 +81,7 @@
     <property role="TrG5h" value="ReviewConfig" />
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="293752265167076767" />
+    <property role="34LRSv" value="review config" />
     <node concept="1TJgyj" id="gjBy3ThgKr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="concepts" />
@@ -100,7 +101,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transitions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5bytKtHbVcF" resolve="TransitionType" />
+      <ref role="20lvS9" node="5bytKtHbVcF" resolve="Transition" />
     </node>
     <node concept="PrWs8" id="5bytKtHcke1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -149,7 +150,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transitions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="zJ90MQH9MH" resolve="Transition" />
+      <ref role="20lvS9" node="zJ90MQH9MH" resolve="TransitionHistory" />
     </node>
     <node concept="1TJgyj" id="zJ90MQHn9F" role="1TKVEi">
       <property role="IQ2ns" value="643772908760822379" />
@@ -246,7 +247,7 @@
   </node>
   <node concept="1TIwiD" id="5bytKtHbVcF">
     <property role="EcuMT" value="5972466929627018027" />
-    <property role="TrG5h" value="TransitionType" />
+    <property role="TrG5h" value="Transition" />
     <property role="3GE5qa" value="Config" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5bytKtHbVcS" role="1TKVEi">
@@ -286,7 +287,7 @@
   </node>
   <node concept="1TIwiD" id="zJ90MQH9MH">
     <property role="EcuMT" value="643772908760767661" />
-    <property role="TrG5h" value="Transition" />
+    <property role="TrG5h" value="TransitionHistory" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="zJ90MQH9MT" role="1TKVEl">
       <property role="TrG5h" value="timestamp" />

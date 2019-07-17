@@ -358,7 +358,7 @@
   </node>
   <node concept="13h7C7" id="zJ90MQAmi6">
     <property role="3GE5qa" value="Config" />
-    <ref role="13h7C2" to="txuu:5bytKtHbVcF" resolve="TransitionType" />
+    <ref role="13h7C2" to="txuu:5bytKtHbVcF" resolve="Transition" />
     <node concept="13i0hz" id="zJ90MQAmih" role="13h7CS">
       <property role="TrG5h" value="validFromState" />
       <node concept="3Tm1VV" id="zJ90MQAmii" role="1B3o_S" />
@@ -444,12 +444,12 @@
           <node concept="3cpWsn" id="zJ90MQH9Pw" role="3cpWs9">
             <property role="TrG5h" value="transition" />
             <node concept="3Tqbb2" id="zJ90MQH9Ps" role="1tU5fm">
-              <ref role="ehGHo" to="txuu:zJ90MQH9MH" resolve="Transition" />
+              <ref role="ehGHo" to="txuu:zJ90MQH9MH" resolve="TransitionHistory" />
             </node>
             <node concept="2ShNRf" id="zJ90MQH9QP" role="33vP2m">
               <node concept="3zrR0B" id="zJ90MQH9QN" role="2ShVmc">
                 <node concept="3Tqbb2" id="zJ90MQH9QO" role="3zrR0E">
-                  <ref role="ehGHo" to="txuu:zJ90MQH9MH" resolve="Transition" />
+                  <ref role="ehGHo" to="txuu:zJ90MQH9MH" resolve="TransitionHistory" />
                 </node>
               </node>
             </node>
