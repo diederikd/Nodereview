@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fc74982a-d387-4cb7-af23-f3b0ffdc5a9d(NewSolution.Model1)">
+<model ref="r:fc74982a-d387-4cb7-af23-f3b0ffdc5a9d(ExampleSolution1.Model1)">
   <persistence version="9" />
   <languages>
-    <use id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="NewLanguage" version="-1" />
+    <use id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="RuleLanguage" version="-1" />
     <use id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review" version="0" />
   </languages>
   <imports>
     <import index="1fav" ref="r:6cf1e185-4b8e-4258-bf53-f5550ed01c3f(RuleLanguage.structure)" />
+    <import index="a5m1" ref="r:ab8f7242-e6bb-4ffd-9f89-45499bf2ee1f(ExampleSolution1.Model2)" />
   </imports>
   <registry>
     <language id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review">
@@ -37,6 +38,7 @@
         <reference id="4901333676674512137" name="rowFor" index="3ROJKb" />
       </concept>
       <concept id="4901333676674651668" name="review.structure.ReviewReport" flags="ng" index="3RRLWm">
+        <property id="5264016824861947248" name="scope" index="30BJSp" />
         <property id="4765465678502065686" name="user" index="1Yj2fv" />
         <property id="4765465678502032782" name="timestamp" index="1YjU17" />
         <child id="643772908763246540" name="row" index="2YdkJ0" />
@@ -50,11 +52,11 @@
         <reference id="5167603879045236309" name="concept" index="9QK8c" />
       </concept>
     </language>
-    <language id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="NewLanguage">
-      <concept id="5972466929625315387" name="NewLanguage.structure.RuleGroup" flags="ng" index="ZXWWW">
+    <language id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="RuleLanguage">
+      <concept id="5972466929625315387" name="RuleLanguage.structure.RuleGroup" flags="ng" index="ZXWWW">
         <child id="5972466929625616372" name="child" index="ZY3zN" />
       </concept>
-      <concept id="5972466929625616371" name="NewLanguage.structure.Rule" flags="ng" index="ZY3zO" />
+      <concept id="5972466929625616371" name="RuleLanguage.structure.Rule" flags="ng" index="ZY3zO" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -366,25 +368,44 @@
     </node>
   </node>
   <node concept="3RRLWm" id="48yls$Wt$NC">
-    <property role="1YjU17" value="1563214498835" />
+    <property role="1YjU17" value="1563715438938" />
     <property role="1Yj2fv" value="diederikdulfer" />
-    <node concept="3ROJyv" id="4A8BxSqrRyk" role="2YdkJ0">
+    <property role="30BJSp" value="2" />
+    <node concept="3ROJyv" id="4u$XNuMfXv8" role="2YdkJ0">
       <ref role="3ROJKb" node="5bytKtHc32F" resolve="Rule1" />
     </node>
-    <node concept="3ROJyv" id="4A8BxSqrRyl" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMfXv9" role="2YdkJ0">
       <ref role="3ROJKb" node="5bytKtHc32N" resolve="Rule2" />
     </node>
-    <node concept="3ROJyv" id="4A8BxSqrRym" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMfXva" role="2YdkJ0">
       <ref role="3ROJKb" node="5bytKtH6CnP" resolve="Rule3" />
     </node>
-    <node concept="3ROJyv" id="4A8BxSqrRyn" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMfXvb" role="2YdkJ0">
       <ref role="3ROJKb" node="1RbizSGEEa" resolve="Name of rule 6" />
     </node>
-    <node concept="3ROJyv" id="4A8BxSqrRyo" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMfXvc" role="2YdkJ0">
       <ref role="3ROJKb" node="1RbizSGEFc" resolve="Name of rule 8" />
     </node>
-    <node concept="3ROJyv" id="4A8BxSqrRyp" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMfXvd" role="2YdkJ0">
       <ref role="3ROJKb" node="1RbizSGEFD" resolve="Name of rule 9" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXve" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$Rkz" resolve="Rule11" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXvf" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$Rk$" resolve="Rule12" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXvg" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$Rk_" resolve="Rule3" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXvh" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$RkC" resolve="Name of rule 16" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXvi" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$RkE" resolve="Name of rule 18" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMfXvj" role="2YdkJ0">
+      <ref role="3ROJKb" to="a5m1:4$dyQA9$RkF" resolve="Name of rule 19" />
     </node>
   </node>
 </model>

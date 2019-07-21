@@ -460,7 +460,10 @@
       <node concept="3EZMnI" id="7nkDZJXlKZx" role="3EZMnx">
         <node concept="l2Vlx" id="7nkDZJXlKZy" role="2iSdaV" />
         <node concept="3F0ifn" id="4g52gaNQxoO" role="3EZMnx">
-          <property role="3F0ifm" value="Review samenvatting voor model" />
+          <property role="3F0ifm" value="Review samenvatting voor" />
+        </node>
+        <node concept="3F0A7n" id="4$dyQA9$RUT" role="3EZMnx">
+          <ref role="1NtTu8" to="txuu:4$dyQA9$RlK" resolve="scope" />
         </node>
       </node>
       <node concept="3EZMnI" id="48yls$WrSVI" role="3EZMnx">

@@ -4,7 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/RuleLanguage/RuleLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/review/review.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExampleSolution1/ExampleSolution1.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NodeReview.build/NodeReview.build.msd" folder="" />
     </projectModules>
   </component>

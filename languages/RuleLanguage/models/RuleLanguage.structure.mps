@@ -11,12 +11,6 @@
   </imports>
   <registry>
     <language id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review">
-      <concept id="643772908760767661" name="review.structure.TransitionHistory" flags="ng" index="2YmVyx">
-        <property id="643772908761319972" name="user" index="2YkySC" />
-        <property id="643772908760767673" name="timestamp" index="2YmVyP" />
-        <reference id="643772908760767662" name="oldState" index="2YmVyy" />
-        <reference id="643772908760767664" name="newState" index="2YmVyW" />
-      </concept>
       <concept id="5972466929627018027" name="review.structure.Transition" flags="ng" index="ZNsgG">
         <child id="5972466929627018042" name="to" index="ZNsgX" />
         <child id="5972466929627018040" name="from" index="ZNsgZ" />
@@ -27,12 +21,6 @@
       <concept id="5972466929627017983" name="review.structure.State" flags="ng" index="ZNsnS">
         <property id="643772908759858076" name="color" index="2YipYg" />
         <property id="643772908757459494" name="initial" index="2YrgoE" />
-      </concept>
-      <concept id="4901333676673876644" name="review.structure.ReviewData" flags="ng" index="3RMOIA">
-        <property id="4901333676674177026" name="lastReviewTimestamp" index="3RPX40" />
-        <property id="4901333676674177031" name="lastReviewReviewer" index="3RPX45" />
-        <reference id="643772908760822379" name="state" index="2Ym_pB" />
-        <child id="643772908760767675" name="transitions" index="2YmVyR" />
       </concept>
       <concept id="293752265167076767" name="review.structure.ReviewConfig" flags="ng" index="3Xb6eZ">
         <child id="5972466929627018142" name="transitions" index="ZNsip" />
@@ -65,9 +53,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -87,40 +72,6 @@
       <property role="20kJfa" value="child" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5bytKtH6$ZN" resolve="Rule" />
-    </node>
-    <node concept="3RMOIA" id="1RbizSLgAh" role="lGtFl">
-      <property role="3RPX40" value="1563100141990" />
-      <property role="3RPX45" value="diederikdulfer" />
-      <ref role="2Ym_pB" node="5bytKtHckbA" resolve="To be reviewd" />
-      <node concept="2YmVyx" id="1RbizSLgAi" role="2YmVyR">
-        <property role="2YkySC" value="diederikdulfer" />
-        <property role="2YmVyP" value="1563100087579" />
-        <ref role="2YmVyW" node="5bytKtHckbA" resolve="To be reviewd" />
-      </node>
-      <node concept="2YmVyx" id="1RbizSLgAp" role="2YmVyR">
-        <property role="2YkySC" value="diederikdulfer" />
-        <property role="2YmVyP" value="1563100095022" />
-        <ref role="2YmVyy" node="5bytKtHckbA" resolve="To be reviewd" />
-        <ref role="2YmVyW" node="5bytKtHckbJ" resolve="Reviewed" />
-      </node>
-      <node concept="2YmVyx" id="1RbizSLgAC" role="2YmVyR">
-        <property role="2YkySC" value="diederikdulfer" />
-        <property role="2YmVyP" value="1563100121009" />
-        <ref role="2YmVyy" node="5bytKtHckbJ" resolve="Reviewed" />
-        <ref role="2YmVyW" node="5bytKtHckbA" resolve="To be reviewd" />
-      </node>
-      <node concept="2YmVyx" id="1RbizSLgAG" role="2YmVyR">
-        <property role="2YkySC" value="diederikdulfer" />
-        <property role="2YmVyP" value="1563100134983" />
-        <ref role="2YmVyy" node="5bytKtHckbA" resolve="To be reviewd" />
-        <ref role="2YmVyW" node="5bytKtHckbJ" resolve="Reviewed" />
-      </node>
-      <node concept="2YmVyx" id="1RbizSLgAL" role="2YmVyR">
-        <property role="2YkySC" value="diederikdulfer" />
-        <property role="2YmVyP" value="1563100141990" />
-        <ref role="2YmVyy" node="5bytKtHckbJ" resolve="Reviewed" />
-        <ref role="2YmVyW" node="5bytKtHckbA" resolve="To be reviewd" />
-      </node>
     </node>
   </node>
   <node concept="3Xb6eZ" id="5bytKtH5rwZ">
