@@ -78,6 +78,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -230,6 +231,15 @@
       <node concept="m$_yC" id="4A8BxSquhsV" role="m$_yJ">
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
+      <node concept="m$_yC" id="69Esnd5jyqc" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="m$_yC" id="69Esnd5j_n$" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
+      </node>
+      <node concept="m$_yC" id="69Esnd5j_ox" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
+      </node>
       <node concept="3_J27D" id="4A8BxSqsg7K" role="m_cZH">
         <node concept="3Mxwew" id="4A8BxSqsg7L" role="3MwsjC">
           <property role="3MwjfP" value="NodeReview" />
@@ -238,6 +248,11 @@
       <node concept="2iUeEo" id="4$dyQA9zHJV" role="2iVFfd">
         <property role="2iUeEt" value="dulfer" />
         <property role="2iUeEu" value="www.dulfer.info" />
+      </node>
+      <node concept="3_J27D" id="69Esnd5jClP" role="3s6cr7">
+        <node concept="3Mxwew" id="69Esnd5jClT" role="3MwsjC">
+          <property role="3MwjfP" value="This plugin contains the functionality to review individual nodes and create reports based on a user created configuration. " />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4A8BxSqsg7C" role="3989C9">
@@ -270,6 +285,16 @@
         <node concept="1SiIV0" id="4A8BxSqubam" role="3bR37C">
           <node concept="3bR9La" id="4A8BxSquban" role="1SiIV1">
             <ref role="3bR37D" to="al5i:$bJ0jguQfr" resolve="com.mbeddr.core.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="69Esnd5jyoP" role="3bR37C">
+          <node concept="3bR9La" id="69Esnd5jyoQ" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="69Esnd5jyoR" role="3bR37C">
+          <node concept="3bR9La" id="69Esnd5jyoS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7gQEwkA7rZZ" resolve="jetbrains.mps.console.base" />
           </node>
         </node>
       </node>
