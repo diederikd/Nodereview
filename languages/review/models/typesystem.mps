@@ -37,6 +37,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -71,6 +72,12 @@
         <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -78,6 +85,10 @@
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
+        <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
@@ -181,6 +192,64 @@
     <node concept="1YaCAy" id="zJ90MQwKbi" role="1YuTPh">
       <property role="TrG5h" value="state" />
       <ref role="1YaFvo" to="txuu:5bytKtHbVbZ" resolve="State" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4u$XNuMREYd">
+    <property role="TrG5h" value="CheckConfig" />
+    <property role="3GE5qa" value="Config" />
+    <node concept="3clFbS" id="4u$XNuMREYe" role="18ibNy">
+      <node concept="3clFbJ" id="4u$XNuMRF0u" role="3cqZAp">
+        <node concept="3eOSWO" id="4u$XNuMROb8" role="3clFbw">
+          <node concept="3cmrfG" id="4u$XNuMRObw" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="4u$XNuMRHZb" role="3uHU7B">
+            <node concept="2OqwBi" id="4u$XNuMRFR3" role="2Oq$k0">
+              <node concept="2OqwBi" id="4u$XNuMRFbR" role="2Oq$k0">
+                <node concept="1YBJjd" id="4u$XNuMRF1p" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4u$XNuMREZ5" resolve="reviewConfig" />
+                </node>
+                <node concept="I4A8Y" id="4u$XNuMRFn8" role="2OqNvi" />
+              </node>
+              <node concept="1j9C0f" id="4u$XNuMRFYg" role="2OqNvi">
+                <ref role="1j9C0d" to="txuu:gjBy3TfZQv" resolve="ReviewConfig" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="4u$XNuMRLF5" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="4u$XNuMRF0w" role="3clFbx">
+          <node concept="34ab3g" id="4u$XNuMShja" role="3cqZAp">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="4u$XNuMShQf" role="34bqiv">
+              <node concept="Xl_RD" id="4u$XNuMShjc" role="3uHU7B" />
+              <node concept="2OqwBi" id="4u$XNuMShQY" role="3uHU7w">
+                <node concept="2OqwBi" id="4u$XNuMShQZ" role="2Oq$k0">
+                  <node concept="1YBJjd" id="4u$XNuMShR0" role="2Oq$k0">
+                    <ref role="1YBMHb" node="4u$XNuMREZ5" resolve="reviewConfig" />
+                  </node>
+                  <node concept="I4A8Y" id="4u$XNuMShR1" role="2OqNvi" />
+                </node>
+                <node concept="1j9C0f" id="4u$XNuMShR2" role="2OqNvi">
+                  <ref role="1j9C0d" to="txuu:gjBy3TfZQv" resolve="ReviewConfig" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2MkqsV" id="4u$XNuMROlP" role="3cqZAp">
+            <node concept="Xl_RD" id="4u$XNuMROm9" role="2MkJ7o">
+              <property role="Xl_RC" value="Er kan maar een configuratie zijn in het model en de geimporteerde modellen." />
+            </node>
+            <node concept="1YBJjd" id="4u$XNuMROoX" role="2OEOjV">
+              <ref role="1YBMHb" node="4u$XNuMREZ5" resolve="reviewConfig" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4u$XNuMREZ5" role="1YuTPh">
+      <property role="TrG5h" value="reviewConfig" />
+      <ref role="1YaFvo" to="txuu:gjBy3TfZQv" resolve="ReviewConfig" />
     </node>
   </node>
 </model>

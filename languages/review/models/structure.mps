@@ -222,9 +222,30 @@
     <node concept="1TJgyj" id="zJ90MQQAZc" role="1TKVEi">
       <property role="IQ2ns" value="643772908763246540" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="row" />
+      <property role="20kJfa" value="rows" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4g52gaNPZ6t" resolve="ReportRow" />
+    </node>
+    <node concept="1TJgyj" id="4u$XNuMOwZ5" role="1TKVEi">
+      <property role="IQ2ns" value="5162522891468804037" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="filteredrows" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4g52gaNPZ6t" resolve="ReportRow" />
+    </node>
+    <node concept="1TJgyj" id="4u$XNuMvFN6" role="1TKVEi">
+      <property role="IQ2ns" value="5162522891463343302" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sortedrows" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4g52gaNPZ6t" resolve="ReportRow" />
+    </node>
+    <node concept="1TJgyj" id="4u$XNuML52n" role="1TKVEi">
+      <property role="IQ2ns" value="5162522891467903127" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="stateFilter" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5bytKtHbVbZ" resolve="State" />
     </node>
   </node>
   <node concept="1TIwiD" id="4g52gaNPZ6t">

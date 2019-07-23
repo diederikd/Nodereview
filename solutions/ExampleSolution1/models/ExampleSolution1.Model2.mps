@@ -39,7 +39,7 @@
       <concept id="4901333676674651668" name="review.structure.ReviewReport" flags="ng" index="3RRLWm">
         <property id="4765465678502065686" name="user" index="1Yj2fv" />
         <property id="4765465678502032782" name="timestamp" index="1YjU17" />
-        <child id="643772908763246540" name="row" index="2YdkJ0" />
+        <child id="5162522891463343302" name="sortedrows" index="3PQ$JL" />
       </concept>
       <concept id="293752265167076767" name="review.structure.ReviewConfig" flags="ng" index="3Xb6eZ">
         <child id="5972466929627018142" name="transitions" index="ZNsip" />
@@ -366,25 +366,25 @@
     </node>
   </node>
   <node concept="3RRLWm" id="4$dyQA9$Rl$">
-    <property role="1YjU17" value="1563631869893" />
+    <property role="1YjU17" value="1563857299142" />
     <property role="1Yj2fv" value="diederikdulfer" />
-    <node concept="3ROJyv" id="4$dyQA9AoPR" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMSkJt" role="3PQ$JL">
       <ref role="3ROJKb" node="4$dyQA9$Rkz" resolve="Rule11" />
     </node>
-    <node concept="3ROJyv" id="4$dyQA9AoPS" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMSkJu" role="3PQ$JL">
       <ref role="3ROJKb" node="4$dyQA9$Rk$" resolve="Rule12" />
     </node>
-    <node concept="3ROJyv" id="4$dyQA9AoPT" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMSkJv" role="3PQ$JL">
       <ref role="3ROJKb" node="4$dyQA9$Rk_" resolve="Rule3" />
     </node>
-    <node concept="3ROJyv" id="4$dyQA9AoPU" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMSkJy" role="3PQ$JL">
+      <ref role="3ROJKb" node="4$dyQA9$RkF" resolve="Name of rule 19" />
+    </node>
+    <node concept="3ROJyv" id="4u$XNuMSkJw" role="3PQ$JL">
       <ref role="3ROJKb" node="4$dyQA9$RkC" resolve="Name of rule 16" />
     </node>
-    <node concept="3ROJyv" id="4$dyQA9AoPV" role="2YdkJ0">
+    <node concept="3ROJyv" id="4u$XNuMSkJx" role="3PQ$JL">
       <ref role="3ROJKb" node="4$dyQA9$RkE" resolve="Name of rule 18" />
-    </node>
-    <node concept="3ROJyv" id="4$dyQA9AoPW" role="2YdkJ0">
-      <ref role="3ROJKb" node="4$dyQA9$RkF" resolve="Name of rule 19" />
     </node>
   </node>
 </model>

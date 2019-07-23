@@ -10,27 +10,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="65f48edc-e76b-4507-b55a-ff12f69af31b" name="review">
-      <concept id="5972466929627018027" name="review.structure.Transition" flags="ng" index="ZNsgG">
-        <child id="5972466929627018042" name="to" index="ZNsgX" />
-        <child id="5972466929627018040" name="from" index="ZNsgZ" />
-      </concept>
-      <concept id="5972466929627018032" name="review.structure.StateReference" flags="ng" index="ZNsgR">
-        <reference id="5972466929627018033" name="state" index="ZNsgQ" />
-      </concept>
-      <concept id="5972466929627017983" name="review.structure.State" flags="ng" index="ZNsnS">
-        <property id="643772908759858076" name="color" index="2YipYg" />
-        <property id="643772908757459494" name="initial" index="2YrgoE" />
-      </concept>
-      <concept id="293752265167076767" name="review.structure.ReviewConfig" flags="ng" index="3Xb6eZ">
-        <child id="5972466929627018142" name="transitions" index="ZNsip" />
-        <child id="5972466929627018139" name="states" index="ZNsis" />
-        <child id="293752265167408155" name="concepts" index="3XlD8V" />
-      </concept>
-      <concept id="293752265167408099" name="review.structure.ConceptDeclarationReference" flags="ng" index="3XlDn3">
-        <reference id="5167603879045236309" name="concept" index="9QK8c" />
-      </concept>
-    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -72,39 +51,6 @@
       <property role="20kJfa" value="child" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5bytKtH6$ZN" resolve="Rule" />
-    </node>
-  </node>
-  <node concept="3Xb6eZ" id="5bytKtH5rwZ">
-    <property role="TrG5h" value="Language review" />
-    <node concept="ZNsgG" id="1RbizSLgA5" role="ZNsip">
-      <property role="TrG5h" value="Review Done" />
-      <node concept="ZNsgR" id="1RbizSLgAb" role="ZNsgX">
-        <ref role="ZNsgQ" node="5bytKtHckbJ" resolve="Reviewed" />
-      </node>
-      <node concept="ZNsgR" id="1RbizSLgAe" role="ZNsgZ">
-        <ref role="ZNsgQ" node="5bytKtHckbA" resolve="To be reviewd" />
-      </node>
-    </node>
-    <node concept="ZNsgG" id="1RbizSLgAs" role="ZNsip">
-      <property role="TrG5h" value="Revert Review" />
-      <node concept="ZNsgR" id="1RbizSLgA_" role="ZNsgX">
-        <ref role="ZNsgQ" node="5bytKtHckbA" resolve="To be reviewd" />
-      </node>
-      <node concept="ZNsgR" id="1RbizSLgAz" role="ZNsgZ">
-        <ref role="ZNsgQ" node="5bytKtHckbJ" resolve="Reviewed" />
-      </node>
-    </node>
-    <node concept="ZNsnS" id="5bytKtHckbA" role="ZNsis">
-      <property role="TrG5h" value="To be reviewd" />
-      <property role="2YrgoE" value="true" />
-      <property role="2YipYg" value="#F9E79F" />
-    </node>
-    <node concept="ZNsnS" id="5bytKtHckbJ" role="ZNsis">
-      <property role="TrG5h" value="Reviewed" />
-      <property role="2YipYg" value="#58D68D" />
-    </node>
-    <node concept="3XlDn3" id="1RbizSLg_K" role="3XlD8V">
-      <ref role="9QK8c" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
     </node>
   </node>
   <node concept="1TIwiD" id="5bytKtH6$ZN">
