@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ab8f7242-e6bb-4ffd-9f89-45499bf2ee1f(ExampleSolution1.Model2)">
+<model ref="r:ab8f7242-e6bb-4ffd-9f89-45499bf2ee1f(ExampleSolution2.Model2)">
   <persistence version="9" />
   <languages>
     <use id="77dd14e4-2545-4652-ad4e-6984a24742a4" name="RuleLanguage" version="0" />

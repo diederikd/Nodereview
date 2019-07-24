@@ -5,8 +5,8 @@
       <modulePath path="$PROJECT_DIR$/languages/review/review.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ruleLanguage/RuleLanguage.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ExampleSolution1/ExampleSolution1.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExampleSolution2/ExampleSolution2.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NodeReview.build/NodeReview.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ReviewPlugin/ReviewPlugin.msd" folder="" />
     </projectModules>
   </component>
 </project>
