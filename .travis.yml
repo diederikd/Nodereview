@@ -8,8 +8,8 @@ install:
 - unzip MPS-2019.1.zip
 - unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip 
 script:
-- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins clean generate assemble
-- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1
+- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./plugins clean generate assemble
+- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./plugins
 before_deploy: mv build/artifacts/NodeReview/NodeReview.zip build/artifacts/NodeReview/NodeReview-MPS-2019.1.zip
 
 deploy:
@@ -22,4 +22,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: diederikd/NodeReviw
+    repo: diederikd/NodeReview

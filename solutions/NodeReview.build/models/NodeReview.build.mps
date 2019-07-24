@@ -141,7 +141,7 @@
       </node>
     </node>
     <node concept="398rNT" id="4A8BxSqsg7v" role="1l3spd">
-      <property role="TrG5h" value="extensions.home" />
+      <property role="TrG5h" value="extensions_home" />
       <node concept="398BVA" id="4A8BxSquhk_" role="398pKh">
         <ref role="398BVh" node="4A8BxSqsg7q" resolve="mps_home" />
         <node concept="2Ry0Ak" id="4A8BxSquhmn" role="iGT6I">
@@ -153,7 +153,7 @@
       <property role="TrG5h" value="imagespath" />
     </node>
     <node concept="398rNT" id="4A8BxSqsg7x" role="1l3spd">
-      <property role="TrG5h" value="project.home" />
+      <property role="TrG5h" value="project_home" />
     </node>
     <node concept="398rNT" id="2AEzmscAXNe" role="1l3spd">
       <property role="TrG5h" value="mbeddr_home" />
@@ -185,7 +185,7 @@
     <node concept="2sgV4H" id="2AEzmscC0P_" role="1l3spa">
       <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
       <node concept="398BVA" id="4A8BxSquhky" role="2JcizS">
-        <ref role="398BVh" node="4A8BxSqsg7v" resolve="extensions.home" />
+        <ref role="398BVh" node="4A8BxSqsg7v" resolve="extensions_home" />
       </node>
     </node>
     <node concept="2sgV4H" id="4A8BxSquhkb" role="1l3spa">
@@ -216,7 +216,7 @@
       </node>
       <node concept="3_J27D" id="4A8BxSqsg7G" role="m$_w8">
         <node concept="3Mxwew" id="4A8BxSqsg7H" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="m$f5U" id="4A8BxSqsg7I" role="m$_yh">

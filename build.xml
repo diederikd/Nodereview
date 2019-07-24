@@ -4,14 +4,14 @@
   <property name="build.tmp" location="${build.dir}/tmp/NodeReview" />
   <property name="build.layout" location="${build.dir}/artifacts/NodeReview" />
   <property name="mps_home" location="${basedir}/../../../../Applications/MPS 2019.1.app/Contents" />
-  <property name="extensions.home" location="${mps_home}/plugins" />
+  <property name="extensions_home" location="${mps_home}/plugins" />
   <property name="imagespath" location="" />
-  <property name="project.home" location="" />
+  <property name="project_home" location="" />
   <property name="mbeddr_home" location="${mps_home}/plugins" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr_home}" />
   <property name="artifacts.com.mbeddr.platform.distribution" location="${mbeddr_home}" />
-  <property name="artifacts.de.itemis.mps.extensions" location="${extensions.home}" />
+  <property name="artifacts.de.itemis.mps.extensions" location="${extensions_home}" />
   <property name="artifacts.com.mbeddr.platform.ts.tests.build" location="${mbeddr_home}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
@@ -47,7 +47,8 @@
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>NodeReview</id>
         <name>NodeReview</name>
-        <version>1.0</version>
+        <description>This plugin contains the functionality to review individual nodes and create reports based on a user created configuration. </description>
+        <version>0.3</version>
         <vendor url="www.dulfer.info">dulfer</vendor>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.migration.workbench</depends>
@@ -285,9 +286,9 @@
         <arg value="-Xmx512m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
-      <macro name="extensions.home" path="${extensions.home}" />
+      <macro name="extensions_home" path="${extensions_home}" />
       <macro name="imagespath" path="${imagespath}" />
-      <macro name="project.home" path="${project.home}" />
+      <macro name="project_home" path="${project_home}" />
       <macro name="mbeddr_home" path="${mbeddr_home}" />
     </generate>
   </target>
