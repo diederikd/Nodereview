@@ -7,7 +7,7 @@ before_install:
 - wget https://github.com/mbeddr/mbeddr.core/releases/download/nightly-619/platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip 
 install:
 - unzip MPS-2019.1.zip
-- unzip nightly-2019.1.1037.4955bbc/de.itemis.mps.extensions-2019.1.1037.4955bbc.zip -d plugins
+- unzip de.itemis.mps.extensions-2019.1.1037.4955bbc.zip -d plugins
 - unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip -d plugins
 script:
 - ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./plugins clean generate assemble
