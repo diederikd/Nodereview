@@ -11,7 +11,6 @@ install:
 - unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip
 script:
 - ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./de.itemis.mps.extensions clean generate assemble
-- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./de.itemis.mps.extensions
 before_deploy: mv build/artifacts/NodeReview/NodeReview.zip build/artifacts/NodeReview/NodeReview-MPS-2019.1.zip
 
 deploy:
