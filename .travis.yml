@@ -4,13 +4,13 @@ jdk:
 before_install:
 - wget https://download-cf.jetbrains.com/mps/2019.1/MPS-2019.1.zip
 - wget https://github.com/JetBrains/MPS-extensions/releases/download/nightly-2019.1.1037.4955bbc/de.itemis.mps.extensions-2019.1.1037.4955bbc.zip
-- wget https://github.com/mbeddr/mbeddr.core/releases/download/nightly-619/platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip 
+- wget https://guest:@build.mbeddr.com/repository/downloadAll/Mbeddr2_Mbeddr_Gradle_platform/256369:id/artifacts.zip
 install:
 - unzip MPS-2019.1.zip
 - unzip de.itemis.mps.extensions-2019.1.1037.4955bbc.zip
-- unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip
+- unzip artifacts.zip
 script:
-- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./plugins -Dextensions_home=./de.itemis.mps.extensions clean generate assemble
+- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./com.mbeddr.platform -Dextensions_home=./de.itemis.mps.extensions clean generate assemble
 before_deploy: mv build/artifacts/NodeReview/NodeReview.zip build/artifacts/NodeReview/NodeReview-MPS-2019.1.zip
 
 deploy:
