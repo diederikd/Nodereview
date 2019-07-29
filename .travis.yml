@@ -23,4 +23,4 @@ deploy:
   skip_cleanup: true
   on:
     tags: true
-    repo: diederikd/NodeReview
+    repo: diederikd/Nodereview
